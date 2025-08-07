@@ -1,5 +1,5 @@
 # bu_bioinformatics
-repo to hold significant projects from my ms in bioinformatics at bu
+repo to hold significant projects from my ms in bioinformatics at bu - uploads in progress !
 
 folder info
 1. nextflow - pipeline development for rnaseq and chipseq data analysis
