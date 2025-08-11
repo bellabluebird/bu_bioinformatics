@@ -1,6 +1,8 @@
 #!/usr/bin/env nextflow
 // rnaseq pipeline for differential expression analysis!
-// bella pfeiffer for bf 528, boston university 2025
+// bella pfeiffer, boston university 2025
+// see cheatsheet for more detail; reach out with questions
+// i'm not an expert but hopefully this is well-annotated and easy to follow
 
 // imports modules from individual files
 include {FASTQC} from './modules/fastqc'
@@ -18,7 +20,7 @@ workflow {
         channels represent streams of data, processing in 
         parallel through the pipeline. nextflow automatically 
         distributes + coordinates our execution of processes, 
-        making it much more efficient.
+        making it much more efficient (parallelizes).
 
     .fromFilePairs creates tuples of file pairs
         Input files: 
