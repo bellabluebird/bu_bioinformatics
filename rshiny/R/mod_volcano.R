@@ -5,9 +5,7 @@
 volcano_plot_ui <- function(id) {
   ns <- NS(id)
   
-  fluidPage(
-    titlePanel("Differential Expression Explorer"),
-    
+  fluidPage(    
     sidebarLayout(
       sidebarPanel(width = 3,
                    wellPanel(
