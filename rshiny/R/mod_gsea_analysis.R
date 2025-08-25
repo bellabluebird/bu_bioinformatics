@@ -11,7 +11,7 @@ gsea_analysis_ui <- function(id) {
     fluidRow(
       column(6,
              wellPanel(
-               h4("📁 Upload Gene Data", icon("upload")),
+               h4("Upload Gene Data", icon("upload")),
                radioButtons(
                  ns("input_type"),
                  "Choose input type:",
@@ -51,7 +51,7 @@ gsea_analysis_ui <- function(id) {
       ),
       column(6,
              wellPanel(
-               h4("🗂️ Upload Gene Sets File", icon("upload")),
+               h4("Upload Gene Sets File", icon("upload")),
                fileInput(
                  ns("gmt_file"), 
                  "Choose Gene Sets File (.gmt)",
@@ -88,7 +88,7 @@ gsea_analysis_ui <- function(id) {
                           checkboxInput(ns("filter_by_padj"), "Filter by P-adj", value = TRUE)
                    ),
                    column(3,
-                          actionButton(ns("process_deseq"), "🔄 Process DESeq2 Data", 
+                          actionButton(ns("process_deseq"), "Process DESeq2 Data", 
                                        class = "btn-warning", style = "margin-top: 25px;")
                    )
                  ),
@@ -98,7 +98,7 @@ gsea_analysis_ui <- function(id) {
                    fluidRow(
                      column(12,
                             div(style = "background-color: #d4edda; padding: 10px; border-radius: 5px;",
-                                h5("✅ DESeq2 Data Processed Successfully"),
+                                h5("DESeq2 Data Processed Successfully"),
                                 textOutput(ns("processing_summary"))
                             )
                      )
@@ -128,7 +128,7 @@ gsea_analysis_ui <- function(id) {
                    ),
                    column(3,
                           br(),
-                          actionButton(ns("run_gsea"), "🚀 Run GSEA", class = "btn-primary btn-lg")
+                          actionButton(ns("run_gsea"), "Run GSEA", class = "btn-primary btn-lg")
                    )
                  )
                )
@@ -161,7 +161,7 @@ gsea_analysis_ui <- function(id) {
         column(3,
                div(class = "card bg-primary text-white mb-3",
                    div(class = "card-body",
-                       h5(class = "card-title", "📊 Total Pathways"),
+                       h5(class = "card-title", "Total Pathways"),
                        h3(class = "card-text", textOutput(ns("total_pathways")))
                    )
                )
@@ -169,7 +169,7 @@ gsea_analysis_ui <- function(id) {
         column(3,
                div(class = "card bg-success text-white mb-3",
                    div(class = "card-body",
-                       h5(class = "card-title", "✅ Significant"),
+                       h5(class = "card-title", "Significant"),
                        h3(class = "card-text", textOutput(ns("sig_pathways")))
                    )
                )
@@ -177,7 +177,7 @@ gsea_analysis_ui <- function(id) {
         column(3,
                div(class = "card bg-danger text-white mb-3",
                    div(class = "card-body",
-                       h5(class = "card-title", "⬆️ Upregulated"),
+                       h5(class = "card-title", "Upregulated"),
                        h3(class = "card-text", textOutput(ns("up_pathways")))
                    )
                )
@@ -185,7 +185,7 @@ gsea_analysis_ui <- function(id) {
         column(3,
                div(class = "card bg-info text-white mb-3",
                    div(class = "card-body",
-                       h5(class = "card-title", "⬇️ Downregulated"),
+                       h5(class = "card-title", "Downregulated"),
                        h3(class = "card-text", textOutput(ns("down_pathways")))
                    )
                )
@@ -197,7 +197,7 @@ gsea_analysis_ui <- function(id) {
         
         # results overview tab
         tabPanel(
-          "📋 Results Overview",
+          "Results Overview",
           br(),
           fluidRow(
             column(6,
@@ -283,13 +283,13 @@ gsea_analysis_ui <- function(id) {
                    wellPanel(
                      h4("Download Results", icon("download")),
                      br(),
-                     downloadButton(ns("download_results"), "📄 Download Results Table", 
+                     downloadButton(ns("download_results"), "Download Results Table", 
                                     class = "btn-primary", style = "width: 100%; margin-bottom: 10px;"),
                      br(),
-                     downloadButton(ns("download_leading_edge"), "🧬 Download Leading Edge Genes", 
+                     downloadButton(ns("download_leading_edge"), "Download Leading Edge Genes", 
                                     class = "btn-info", style = "width: 100%; margin-bottom: 10px;"),
                      br(),
-                     downloadButton(ns("download_ranked_genes"), "📋 Download Ranked Genes", 
+                     downloadButton(ns("download_ranked_genes"), "Download Ranked Genes", 
                                     class = "btn-warning", style = "width: 100%;")
                    )
             ),
