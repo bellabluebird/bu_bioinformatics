@@ -1,5 +1,7 @@
 # rnaseq dashboard
 
+available online here: https://bellabluebird.shinyapps.io/rnaseq_dashboard/
+
 interactive shiny app for exploring huntington's disease RNA-seq data from GSE64810. built for genomics research and data exploration. designed specifically for GSE64810 but can be adapted for other RNA-seq datasets.
 
 this dashboard lets you analyze differential gene expression data comparing huntington's disease patients vs healthy controls in brain tissue. you can upload your data files and explore them through multiple analysis modules.
