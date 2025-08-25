@@ -11,7 +11,7 @@ this dashboard lets you analyze differential gene expression data comparing hunt
 - **GSE64810_mlhd_DESeq2_norm_counts_adjust.txt** - normalized expression counts
 - **pathway_gene_sets.gmt** - gene sets for pathway analysis (from MSigDB)
 
-## analysis modules
+## analysis information + modules
 
 ### sample metadata
 - clinical characteristics and quality metrics
@@ -37,8 +37,7 @@ this dashboard lets you analyze differential gene expression data comparing hunt
 - pathway visualization and statistics
 - leading edge gene identification
   
-## features
-
+### features
 - handles large datasets efficiently (up to 500MB uploads)
 - interactive plots with plotly
 - professional styling with custom CSS
@@ -46,8 +45,7 @@ this dashboard lets you analyze differential gene expression data comparing hunt
 - comprehensive error handling and validation
 - downloadable results in multiple formats
 
-## dataset info
-
+### dataset info
 - **study**: huntington's disease vs control brain samples
 - **tissue**: prefrontal cortex (brodmann area 9)
 - **samples**: 69 total (20 HD patients + 49 controls)
